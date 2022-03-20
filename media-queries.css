@@ -1,0 +1,298 @@
+/* Phone Media Queries */
+@media screen and (min-width: 350px) {
+  header {
+    padding: 0;
+  }
+
+  .nav-links li a {
+    font-size: 12px;
+  }
+
+  .nav-links li {
+    padding: 0 10px;
+  }
+
+  .subscribe-section p {
+    margin-top: 10px;
+  }
+
+  button {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .article-types {
+    grid-template-areas:
+      "a a a"
+      "b b b"
+      "c c c"
+      "d d d"
+      "e e e"
+      "f f f";
+  }
+
+  .article-topics-nav {
+    display: none;
+  }
+
+  .first-article {
+    grid-area: a;
+  }
+  .second-article {
+    grid-area: b;
+  }
+  .third-article {
+    grid-area: c;
+  }
+  .fourth-article {
+    grid-area: d;
+  }
+  .fifth-article {
+    grid-area: e;
+  }
+  .sixth-article {
+    grid-area: f;
+  }
+
+  .editors-pick {
+    grid-template-areas:
+      "g g g"
+      "h h h"
+      "i i i";
+  }
+
+  .first-pick {
+    grid-area: g;
+  }
+
+  .second-pick {
+    grid-area: h;
+  }
+
+  .third-pick {
+    grid-area: i;
+  }
+
+  /* footer */
+  #footer-contact {
+    grid-template-areas:
+      "j j j"
+      "k k k"
+      "l l l"
+      "m m m";
+  }
+
+  .footer-column-1 {
+    grid-area: j;
+  }
+
+  .footer-column-2 {
+    grid-area: k;
+  }
+
+  .footer-column-3 {
+    grid-area: l;
+  }
+
+  .footer-column-4 {
+    grid-area: m;
+  }
+
+  .footer-column-1,
+  .footer-column-2,
+  .footer-column-3,
+  .footer-column-4 {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid whitesmoke;
+  }
+
+  .footer-reference p,
+  .footer-reference p a {
+    font-size: 10px;
+  }
+
+  /* Blog Post */
+  #author-details {
+    grid-template-areas:
+      "x x x"
+      "y y y"
+      "z z z";
+  }
+
+  .author-avatar {
+    grid-area: x;
+  }
+
+  .author-title {
+    grid-area: y;
+  }
+
+  .author-biography {
+    grid-area: z;
+  }
+}
+/* Tablet Media Queries */
+@media screen and (min-width: 700px) {
+  /* Header */
+  header {
+    padding: 0;
+  }
+
+  header img {
+    padding: 20px;
+  }
+
+  .article-types {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f";
+  }
+
+  .first-article {
+    grid-area: a;
+  }
+  .second-article {
+    grid-area: b;
+  }
+  .third-article {
+    grid-area: c;
+  }
+  .fourth-article {
+    grid-area: d;
+  }
+  .fifth-article {
+    grid-area: e;
+  }
+  .sixth-article {
+    grid-area: f;
+  }
+
+  .article-topics-nav {
+    display: block;
+  }
+
+  .editors-pick {
+    grid-template-areas: "g h i";
+  }
+
+  .first-pick {
+    grid-area: g;
+  }
+
+  .second-pick {
+    grid-area: h;
+  }
+
+  .third-pick {
+    grid-area: i;
+  }
+
+  /* Blog Post */
+  .author-details {
+    grid-template-areas:
+      "x y y"
+      "z z z";
+  }
+
+  .author-avatar {
+    grid-area: x;
+  }
+
+  .author-title {
+    grid-area: y;
+  }
+
+  .author-biography {
+    grid-area: z;
+  }
+}
+
+/* Laptop Media Queries */
+@media screen and (min-width: 1100px) {
+  header {
+    padding: 0;
+  }
+
+  .nav-links li a {
+    font-size: 16px;
+  }
+
+  header img {
+    padding: 20px;
+  }
+
+  .article-types {
+    grid-template-areas:
+      "a b c"
+      "d e f";
+  }
+
+  .first-article {
+    grid-area: a;
+  }
+  .second-article {
+    grid-area: b;
+  }
+  .third-article {
+    grid-area: c;
+  }
+  .fourth-article {
+    grid-area: d;
+  }
+  .fifth-article {
+    grid-area: e;
+  }
+  .sixth-article {
+    grid-area: f;
+  }
+
+  /* Footer */
+  #footer-contact {
+    grid-template-areas: "j k l m";
+  }
+
+  .footer-column-1 {
+    grid-area: j;
+  }
+
+  .footer-column-2 {
+    grid-area: k;
+  }
+
+  .footer-column-3 {
+    grid-area: l;
+  }
+
+  .footer-column-4 {
+    grid-area: m;
+  }
+
+  .footer-column-1,
+  .footer-column-2,
+  .footer-column-3,
+  .footer-column-4 {
+    border-bottom: none;
+  }
+
+  /* Blog Post */
+
+  #author-details {
+    grid-template-areas: "x y z";
+  }
+
+  .author-avatar {
+    grid-area: x;
+  }
+
+  .author-title {
+    grid-area: y;
+  }
+
+  .author-biography {
+    grid-area: z;
+  }
+}
